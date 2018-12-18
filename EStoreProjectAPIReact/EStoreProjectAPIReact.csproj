@@ -1,0 +1,356 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Hinh\divider.gif" />
+    <None Include="wwwroot\Hinh\HangHoa\1009.gif" />
+    <None Include="wwwroot\Hinh\HangHoa\21meTyhQebL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31EPGSm2s1L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31hCgES5GXL._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31ioCUUFnoL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31jsjfVfH9L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31LAnW1JFqL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31ncPnMYCxL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31pAGovVENL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31pT+SdvQXL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31TB6tC6BOL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31YOss-gC-L._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\31yxRemzRLL._SS350_ %281%29.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41-yvkFqVZL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\410PjzqoC8L._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\415cOCbey.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\415cOCbeyML.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\416OcTXFfeL._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\416pdroSEkL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\419WCoqfamL._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41A9R5KXCXL._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41BiMx1FKyL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41brDHtPY9L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41CIcYRxJKL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41G38jC0ajL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41GVLtgNngL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41iDo0HDhbL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41iji4-9UsL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41IPLmZIKhL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41KALboJKuL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41lffECD-sL._SY445_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41LMouG6j7L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41MJUdI2jdL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41Pg1ahql8L._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41qfgTvFBwL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41qlcUEhNmL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41riQRGf-6L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41RxtSQOd2L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41sd2DTD8EL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41sdBTtnUDL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41sl3FN6NpL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41sw9ASUvBL._SX342_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41TexqWVkHL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41V4Ds2PtZL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41w4TlVPhGL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41wHu2N4tVL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41WvZnGYUkL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41XX7Pi240L.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41yh1vBmqsL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41Ymq8fjbOL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41Z43OmFHjL._SX342_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41ZE9SmWdzL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\41zxxR71G+L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51+4d3VBFvL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\513UnnRfFML._SL1001_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\515p1IeP0-L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\5195-l+nflL._AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51czOOat0OL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51GBNkHO6vL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51JhyHtnEgL._SL1001_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51l46qQB50L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51Lj5bxbNtL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51nukXFJLJL.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51pvLIvb6ZL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51s6pbRlNyL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51uJ-pWfc9L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51vxcBS1sQL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51w+JqOnmSL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51y46IslQkL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51yomC0EodL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\51Z9tfgl4aL._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\71bJrFAys9L._SL1280_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\71cBwWAgvIL._SL1430_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\816zGZv1ORL._SL1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\81k1XbQ6nQL._SL1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\81Q1DvOnnoL._SL1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\91FM0Hog9FL._SL1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\91JUBDf1jTL._AA1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\91T2BjUkYmL._SL1500_.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\Camera1.jpg" />
+    <None Include="wwwroot\Hinh\HangHoa\To.gif" />
+    <None Include="wwwroot\Hinh\icons\Accept.png" />
+    <None Include="wwwroot\Hinh\icons\Add to basket.png" />
+    <None Include="wwwroot\Hinh\icons\Add.png" />
+    <None Include="wwwroot\Hinh\icons\Address book.png" />
+    <None Include="wwwroot\Hinh\icons\Alarm.png" />
+    <None Include="wwwroot\Hinh\icons\Anchor.png" />
+    <None Include="wwwroot\Hinh\icons\Application form.png" />
+    <None Include="wwwroot\Hinh\icons\Bar chart.png" />
+    <None Include="wwwroot\Hinh\icons\Basket.png" />
+    <None Include="wwwroot\Hinh\icons\Bell.png" />
+    <None Include="wwwroot\Hinh\icons\Best.png" />
+    <None Include="wwwroot\Hinh\icons\Billboard.png" />
+    <None Include="wwwroot\Hinh\icons\Bluetooth.png" />
+    <None Include="wwwroot\Hinh\icons\Bomb.png" />
+    <None Include="wwwroot\Hinh\icons\Book.png" />
+    <None Include="wwwroot\Hinh\icons\Bookmark.png" />
+    <None Include="wwwroot\Hinh\icons\Box.png" />
+    <None Include="wwwroot\Hinh\icons\Boy.png" />
+    <None Include="wwwroot\Hinh\icons\Brick house.png" />
+    <None Include="wwwroot\Hinh\icons\Bricks.png" />
+    <None Include="wwwroot\Hinh\icons\Brief case.png" />
+    <None Include="wwwroot\Hinh\icons\Brightness.png" />
+    <None Include="wwwroot\Hinh\icons\Bubble.png" />
+    <None Include="wwwroot\Hinh\icons\Buddy.png" />
+    <None Include="wwwroot\Hinh\icons\Cable.png" />
+    <None Include="wwwroot\Hinh\icons\Calculator.png" />
+    <None Include="wwwroot\Hinh\icons\Calendar.png" />
+    <None Include="wwwroot\Hinh\icons\Call.png" />
+    <None Include="wwwroot\Hinh\icons\Camera.png" />
+    <None Include="wwwroot\Hinh\icons\Card file.png" />
+    <None Include="wwwroot\Hinh\icons\Cash register.png" />
+    <None Include="wwwroot\Hinh\icons\Cat.png" />
+    <None Include="wwwroot\Hinh\icons\Certificate.png" />
+    <None Include="wwwroot\Hinh\icons\Clien list.png" />
+    <None Include="wwwroot\Hinh\icons\Clipboard.png" />
+    <None Include="wwwroot\Hinh\icons\Clock.png" />
+    <None Include="wwwroot\Hinh\icons\Closed door.png" />
+    <None Include="wwwroot\Hinh\icons\Closed folder.png" />
+    <None Include="wwwroot\Hinh\icons\Coin.png" />
+    <None Include="wwwroot\Hinh\icons\Coins.png" />
+    <None Include="wwwroot\Hinh\icons\Color wheel.png" />
+    <None Include="wwwroot\Hinh\icons\Comment.png" />
+    <None Include="wwwroot\Hinh\icons\Comments.png" />
+    <None Include="wwwroot\Hinh\icons\Company.png" />
+    <None Include="wwwroot\Hinh\icons\Computer.png" />
+    <None Include="wwwroot\Hinh\icons\Conference.png" />
+    <None Include="wwwroot\Hinh\icons\Connect.png" />
+    <None Include="wwwroot\Hinh\icons\Construction.png" />
+    <None Include="wwwroot\Hinh\icons\Contrast.png" />
+    <None Include="wwwroot\Hinh\icons\Control panel.png" />
+    <None Include="wwwroot\Hinh\icons\Create.png" />
+    <None Include="wwwroot\Hinh\icons\Database.png" />
+    <None Include="wwwroot\Hinh\icons\Date.png" />
+    <None Include="wwwroot\Hinh\icons\Delete.png" />
+    <None Include="wwwroot\Hinh\icons\Desktop.png" />
+    <None Include="wwwroot\Hinh\icons\Diagram.png" />
+    <None Include="wwwroot\Hinh\icons\Dice.png" />
+    <None Include="wwwroot\Hinh\icons\Disconnect.png" />
+    <None Include="wwwroot\Hinh\icons\Discussion.png" />
+    <None Include="wwwroot\Hinh\icons\Document.png" />
+    <None Include="wwwroot\Hinh\icons\Documents.png" />
+    <None Include="wwwroot\Hinh\icons\Dog.png" />
+    <None Include="wwwroot\Hinh\icons\Dollar.png" />
+    <None Include="wwwroot\Hinh\icons\Down.png" />
+    <None Include="wwwroot\Hinh\icons\Download.png" />
+    <None Include="wwwroot\Hinh\icons\Edit.png" />
+    <None Include="wwwroot\Hinh\icons\eng.gif" />
+    <None Include="wwwroot\Hinh\icons\Euro.png" />
+    <None Include="wwwroot\Hinh\icons\Exit button.png" />
+    <None Include="wwwroot\Hinh\icons\Exit.png" />
+    <None Include="wwwroot\Hinh\icons\Favourites.png" />
+    <None Include="wwwroot\Hinh\icons\Fax.png" />
+    <None Include="wwwroot\Hinh\icons\Flash drive.png" />
+    <None Include="wwwroot\Hinh\icons\Flow block.png" />
+    <None Include="wwwroot\Hinh\icons\Free.png" />
+    <None Include="wwwroot\Hinh\icons\Friends.png" />
+    <None Include="wwwroot\Hinh\icons\Full basket.png" />
+    <None Include="wwwroot\Hinh\icons\Funny.png" />
+    <None Include="wwwroot\Hinh\icons\Game controller.png" />
+    <None Include="wwwroot\Hinh\icons\Gear.png" />
+    <None Include="wwwroot\Hinh\icons\Genealogy.png" />
+    <None Include="wwwroot\Hinh\icons\Gift.png" />
+    <None Include="wwwroot\Hinh\icons\Girl.png" />
+    <None Include="wwwroot\Hinh\icons\Globe.png" />
+    <None Include="wwwroot\Hinh\icons\Handshake.png" />
+    <None Include="wwwroot\Hinh\icons\Happy.png" />
+    <None Include="wwwroot\Hinh\icons\Hard disk.png" />
+    <None Include="wwwroot\Hinh\icons\Heart.png" />
+    <None Include="wwwroot\Hinh\icons\Help.png" />
+    <None Include="wwwroot\Hinh\icons\Hierarchy.png" />
+    <None Include="wwwroot\Hinh\icons\Home.png" />
+    <None Include="wwwroot\Hinh\icons\Hungup.png" />
+    <None Include="wwwroot\Hinh\icons\Industry.png" />
+    <None Include="wwwroot\Hinh\icons\Info.png" />
+    <None Include="wwwroot\Hinh\icons\Key.png" />
+    <None Include="wwwroot\Hinh\icons\Label.png" />
+    <None Include="wwwroot\Hinh\icons\Left.png" />
+    <None Include="wwwroot\Hinh\icons\Lego brick.png" />
+    <None Include="wwwroot\Hinh\icons\Letter.png" />
+    <None Include="wwwroot\Hinh\icons\List.png" />
+    <None Include="wwwroot\Hinh\icons\Lists.png" />
+    <None Include="wwwroot\Hinh\icons\Lock.png" />
+    <None Include="wwwroot\Hinh\icons\Log out.png" />
+    <None Include="wwwroot\Hinh\icons\Login.png" />
+    <None Include="wwwroot\Hinh\icons\Mail.png" />
+    <None Include="wwwroot\Hinh\icons\Microsoft.png" />
+    <None Include="wwwroot\Hinh\icons\Mobile phone.png" />
+    <None Include="wwwroot\Hinh\icons\Money.png" />
+    <None Include="wwwroot\Hinh\icons\Monitor.png" />
+    <None Include="wwwroot\Hinh\icons\Mouse.png" />
+    <None Include="wwwroot\Hinh\icons\Music.png" />
+    <None Include="wwwroot\Hinh\icons\No.png" />
+    <None Include="wwwroot\Hinh\icons\Notes.png" />
+    <None Include="wwwroot\Hinh\icons\Numbered list.png" />
+    <None Include="wwwroot\Hinh\icons\OK.png" />
+    <None Include="wwwroot\Hinh\icons\Online.png" />
+    <None Include="wwwroot\Hinh\icons\Open door.png" />
+    <None Include="wwwroot\Hinh\icons\Open file.png" />
+    <None Include="wwwroot\Hinh\icons\Open folder.png" />
+    <None Include="wwwroot\Hinh\icons\Open letter.png" />
+    <None Include="wwwroot\Hinh\icons\Open lock.png" />
+    <None Include="wwwroot\Hinh\icons\Payment.png" />
+    <None Include="wwwroot\Hinh\icons\Peace.png" />
+    <None Include="wwwroot\Hinh\icons\Pets.png" />
+    <None Include="wwwroot\Hinh\icons\Phone.png" />
+    <None Include="wwwroot\Hinh\icons\Piggy bank.png" />
+    <None Include="wwwroot\Hinh\icons\Piggy.png" />
+    <None Include="wwwroot\Hinh\icons\Pointer.png" />
+    <None Include="wwwroot\Hinh\icons\Pound.png" />
+    <None Include="wwwroot\Hinh\icons\Price list.png" />
+    <None Include="wwwroot\Hinh\icons\Print preview.png" />
+    <None Include="wwwroot\Hinh\icons\Print.png" />
+    <None Include="wwwroot\Hinh\icons\Printer.png" />
+    <None Include="wwwroot\Hinh\icons\Problem.png" />
+    <None Include="wwwroot\Hinh\icons\Properties.png" />
+    <None Include="wwwroot\Hinh\icons\Red star.png" />
+    <None Include="wwwroot\Hinh\icons\Refresh.png" />
+    <None Include="wwwroot\Hinh\icons\Remove from basket.png" />
+    <None Include="wwwroot\Hinh\icons\Report.png" />
+    <None Include="wwwroot\Hinh\icons\Right.png" />
+    <None Include="wwwroot\Hinh\icons\Rouble.png" />
+    <None Include="wwwroot\Hinh\icons\RSS.png" />
+    <None Include="wwwroot\Hinh\icons\Sad.png" />
+    <None Include="wwwroot\Hinh\icons\Safe.png" />
+    <None Include="wwwroot\Hinh\icons\Save as.png" />
+    <None Include="wwwroot\Hinh\icons\Save.png" />
+    <None Include="wwwroot\Hinh\icons\Scroll list.png" />
+    <None Include="wwwroot\Hinh\icons\Search.png" />
+    <None Include="wwwroot\Hinh\icons\Shield.png" />
+    <None Include="wwwroot\Hinh\icons\Smile.png" />
+    <None Include="wwwroot\Hinh\icons\Software.png" />
+    <None Include="wwwroot\Hinh\icons\Statistics.png" />
+    <None Include="wwwroot\Hinh\icons\Stop.png" />
+    <None Include="wwwroot\Hinh\icons\Task list.png" />
+    <None Include="wwwroot\Hinh\icons\Telephone.png" />
+    <None Include="wwwroot\Hinh\icons\Text.png" />
+    <None Include="wwwroot\Hinh\icons\Tick.png" />
+    <None Include="wwwroot\Hinh\icons\To do list.png" />
+    <None Include="wwwroot\Hinh\icons\Trash.png" />
+    <None Include="wwwroot\Hinh\icons\Unknown person.png" />
+    <None Include="wwwroot\Hinh\icons\Unlock.png" />
+    <None Include="wwwroot\Hinh\icons\Unordered list.png" />
+    <None Include="wwwroot\Hinh\icons\Up.png" />
+    <None Include="wwwroot\Hinh\icons\Upload.png" />
+    <None Include="wwwroot\Hinh\icons\User group.png" />
+    <None Include="wwwroot\Hinh\icons\User.png" />
+    <None Include="wwwroot\Hinh\icons\Users.png" />
+    <None Include="wwwroot\Hinh\icons\vit.gif" />
+    <None Include="wwwroot\Hinh\icons\Wallet.png" />
+    <None Include="wwwroot\Hinh\icons\Warning.png" />
+    <None Include="wwwroot\Hinh\icons\Weather.png" />
+    <None Include="wwwroot\Hinh\icons\Wireless.png" />
+    <None Include="wwwroot\Hinh\icons\Wizard.png" />
+    <None Include="wwwroot\Hinh\icons\Yen.png" />
+    <None Include="wwwroot\Hinh\icons\Yin-Yang.png" />
+    <None Include="wwwroot\Hinh\icons\Zoom in.png" />
+    <None Include="wwwroot\Hinh\icons\Zoom out.png" />
+    <None Include="wwwroot\Hinh\icons\Zoom.png" />
+    <None Include="wwwroot\Hinh\KhachHang\android_300200.png" />
+    <None Include="wwwroot\Hinh\KhachHang\Author.jpg" />
+    <None Include="wwwroot\Hinh\KhachHang\man.jpg" />
+    <None Include="wwwroot\Hinh\KhachHang\Penguins.jpg" />
+    <None Include="wwwroot\Hinh\KhachHang\woman.jpg" />
+    <None Include="wwwroot\Hinh\Loai11.jpeg" />
+    <None Include="wwwroot\Hinh\Loaiimages.jpeg" />
+    <None Include="wwwroot\Hinh\Loai\1.jpg" />
+    <None Include="wwwroot\Hinh\Loai\2.jpg" />
+    <None Include="wwwroot\Hinh\Loai\3.jpg" />
+    <None Include="wwwroot\Hinh\Loai\31EPGSm2s1L._SL500_AA300_.jpg" />
+    <None Include="wwwroot\Hinh\Loai\4.jpg" />
+    <None Include="wwwroot\Hinh\Loai\Accept.png" />
+    <None Include="wwwroot\Hinh\Loai\agenda_1.jpg" />
+    <None Include="wwwroot\Hinh\Loai\Alarm.png" />
+    <None Include="wwwroot\Hinh\Loai\Anchor.png" />
+    <None Include="wwwroot\Hinh\Loai\Bell.png" />
+    <None Include="wwwroot\Hinh\Loai\Best.png" />
+    <None Include="wwwroot\Hinh\Loai\Billboard.png" />
+    <None Include="wwwroot\Hinh\Loai\Bomb.png" />
+    <None Include="wwwroot\Hinh\Loai\Brick house.png" />
+    <None Include="wwwroot\Hinh\Loai\Bricks.png" />
+    <None Include="wwwroot\Hinh\Loai\Buddy.png" />
+    <None Include="wwwroot\Hinh\Loai\Certificate.png" />
+    <None Include="wwwroot\Hinh\Loai\Dice.png" />
+    <None Include="wwwroot\Hinh\Loai\Dollar.png" />
+    <None Include="wwwroot\Hinh\Loai\Favourites.png" />
+    <None Include="wwwroot\Hinh\Loai\Funny.png" />
+    <None Include="wwwroot\Hinh\Loai\Heart.png" />
+    <None Include="wwwroot\Hinh\Loai\Microsoft.png" />
+    <None Include="wwwroot\Hinh\Loai\Unlock.png" />
+    <None Include="wwwroot\Hinh\NhaCC\Acer_logo-300x300.gif" />
+    <None Include="wwwroot\Hinh\NhaCC\amd-logo.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\apple.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\dell-logo.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\dell-logo2.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\hp-logo.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\intel-logo.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\motorola.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\nokia.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\samsung-logo-2.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\samsung.jpg" />
+    <None Include="wwwroot\Hinh\NhaCC\shopping_cart.png" />
+    <None Include="wwwroot\Hinh\NhaCC\sonny-ericsson.jpg" />
+    <None Include="wwwroot\Hinh\Others\shopping_cart.png" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)build\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
