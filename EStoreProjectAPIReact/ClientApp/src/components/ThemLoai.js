@@ -4,7 +4,7 @@ import axios from 'axios';
 export class ThemLoai extends Component {
     constructor(props) {
         super(props);
-        this.state = {"ThongBao":""}
+        this.state = { "ThongBao": "" }
     }
     fieldOnChange = sender => {
         let fieldName = sender.target.name;
@@ -29,7 +29,7 @@ export class ThemLoai extends Component {
     uploadForm = event => {
         event.preventDefault();
         this.setState({
-            ...this.state, ThongBao : "Đang thực hiện"
+            ...this.state, ThongBao: "Đang thực hiện"
         });
 
         //nếu chưa chọn file thì thông báo
@@ -74,14 +74,30 @@ export class ThemLoai extends Component {
         return (
             <div>
                 <form>
-                    <h2>Form</h2>
+                    <h2>Thêm loại</h2>
                     <p><b>{this.state.ThongBao}</b></p>
-                    <div><input name="tenLoai" type="text" placeholder="Tên loại" onChange={this.fieldOnChange} /></div>
-                    <textarea name="moTa" onChange={this.fieldOnChange} rows="5" />
-                    <div><input type="file" onChange={this.filesOnChange} multiple /></div>
-                    <button onClick={this.uploadForm}>
-                        Thêm loại
-                    </button>
+                    <table class="table-hover">
+                        <tr>
+                            <td>Tên loại</td>
+                            <td><input name="tenLoai" type="text" placeholder="Tên loại" onChange={this.fieldOnChange} /></td>
+                        </tr>
+                        <tr>
+                            <td>Mô tả</td>
+                            <td><textarea name="moTa" onChange={this.fieldOnChange} rows="5" /></td>
+                        </tr>
+                        <tr>
+                            <td>Hình</td>
+                            <td><input type="file" onChange={this.filesOnChange} multiple /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button onClick={this.uploadForm} class="btn btn-success">
+                                    Thêm loại
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
                 </form>
             </div>
         );

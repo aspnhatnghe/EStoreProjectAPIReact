@@ -76,7 +76,7 @@ export class DanhSachLoai extends Component {
                 <input name="search" value={this.state.keyword} onChange={this.fieldOnChange} />
                 <button type="button" onClick={this.handleSearch}>Tìm</button>
                 <ReactTable data={this.state.data} columns={columns}
-                    defaultPageSize={2} />
+                    defaultPageSize={5} />
             </div>
         );
     }
