@@ -44,6 +44,11 @@ export class NavMenu extends Component {
                                 <Glyphicon glyph='th-list' /> Danh sách loại
                              </NavItem>
                         </LinkContainer>
+                        <LinkContainer to={'/hanghoa'}>
+                            <NavItem>
+                                <Glyphicon glyph='th-list' /> Danh sách Hàng hóa
+                             </NavItem>
+                        </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -22,14 +22,21 @@ namespace EStoreProjectAPIReact.Controllers
 
         // GET: api/HangHoas
         [HttpGet]
-        public IEnumerable<HangHoa> GetHangHoa(string search = "", int pageIndex = 1, int pageSize = 50)
+        public IEnumerable<HangHoaViewModel> GetHangHoa(string search = "", int pageIndex = 1, int pageSize = 50)
         {
-            if(!string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
                 search = search.ToLower().Trim();
             }
             var data = _context.HangHoa.Where(p => p.TenHh.ToLower().Contains(search))
-                .Skip((pageIndex - 1) * pageSize).Take(pageSize);
+                .Skip((pageIndex - 1) * pageSize).Take(pageSize)
+                .Select(p => new HangHoaViewModel
+                {
+                    MaHh = p.MaHh,
+                    TenHh = p.TenHh,
+                    DonGia = p.DonGia.Value * (1 - p.GiamGia),
+                    Hinh = MyTool.GetFullImagePath(HttpContext.Request, "HangHoa", p.Hinh)
+                });
 
             return data;
         }

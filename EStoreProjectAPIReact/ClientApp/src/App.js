@@ -6,19 +6,21 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { ThemLoai } from './components/ThemLoai';
 import { DanhSachLoai } from './components/DanhSachLoai';
+import { HangHoaList } from "./components/HangHoaList";
 
 export default class App extends Component {
-  displayName = App.name
+    displayName = App.name
 
-  render() {
-    return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-        <Route path='/fetchdata' component={FetchData} />
-          <Route path='/themloai' component={ThemLoai} />
-          <Route path='/danhsachloai' component={DanhSachLoai} />
-      </Layout>
-    );
-  }
+    render() {
+        return (
+            <Layout>
+                <Route exact path='/' component={Home} />
+                <Route path='/counter' component={Counter} />
+                <Route path='/fetchdata' component={FetchData} />
+                <Route path='/themloai' component={ThemLoai} />
+                <Route path='/danhsachloai' component={DanhSachLoai} />
+                <Route path='/hanghoa' component={HangHoaList} />
+            </Layout>
+        );
+    }
 }
